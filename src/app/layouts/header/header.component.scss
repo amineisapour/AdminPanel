@@ -1,0 +1,19 @@
+h1.admin-app-name {
+    margin-left: 8px;
+}
+
+.admin-is-mobile .admin-toolbar {
+    position: fixed;
+    /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+    z-index : 2;
+}
+
+.mat-icon {
+    cursor: pointer;
+    color : white;
+}
+
+button {
+    background: #3f51b5;
+    border    : 0px;
+}

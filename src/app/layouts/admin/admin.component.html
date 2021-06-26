@@ -1,0 +1,20 @@
+<div class="admin-container" [class.admin-is-mobile]="mobileQuery.matches">
+
+  <app-layouts-header (sideNavToggle)="snav.toggle()"></app-layouts-header>
+
+  <mat-sidenav-container class="admin-sidenav-container" autosize>
+    <mat-sidenav #snav [opened]="mobileQuery.matches ? false : true" [mode]="mobileQuery.matches ? 'over' : 'side'"
+      [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+      <mat-nav-list>
+        <a mat-list-item routerLink="." *ngFor="let nav of fillerNav">{{nav}}</a>
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <br>
+      <h1>content</h1>
+      <p *ngFor="let content of fillerContent">{{content}}</p>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+</div>
