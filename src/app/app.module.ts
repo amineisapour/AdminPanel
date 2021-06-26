@@ -11,16 +11,16 @@ import {MatMenuModule} from '@angular/material/menu';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AdminComponent } from './layouts/admin/admin.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HeaderComponent } from './layouts/header/header.component';
+import { MainComponent } from './layouts/main/main.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AdminComponent,
     DashboardComponent,
-    HeaderComponent
+    HeaderComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
