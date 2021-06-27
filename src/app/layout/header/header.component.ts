@@ -1,9 +1,11 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output, ViewEncapsulation } from '@angular/core';
+import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
 
 @Component({
   selector: 'app-layout-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class HeaderComponent implements OnInit {
 
@@ -26,5 +28,13 @@ export class HeaderComponent implements OnInit {
 
   mouseLeave() {
     this.direction = 'menu';
+  }
+
+  private m_scrollbarConfiguration: PerfectScrollbarConfigInterface = {
+    swipeEasing: true,
+  };
+  // Get perfect scrollbar configuration   
+  public get config(): PerfectScrollbarConfigInterface {
+    return this.m_scrollbarConfiguration;
   }
 }

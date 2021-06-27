@@ -2,28 +2,94 @@ h1.main-app-name {
     margin-left: 8px;
 }
 
+.main-toolbar {
+    padding-top   : 15px;
+    padding-bottom: 5px;
+}
+
 .main-is-mobile .main-toolbar {
     position: fixed;
     /* Make sure the toolbar will stay on top of the content as it scrolls past. */
     z-index : 2;
 }
 
-// .mat-icon {
-//     cursor: pointer;
-//     color : white;
-// }
-
-// button {
-//     background: #3f51b5;
-//     border    : 0px;
-// }
-
 .top-navigtaion {
-    margin-left: auto;
+    margin-left  : auto;
+    padding-right: 15px;
+    padding-top  : 15px;
 }
 
 @media screen and (max-width: 600px) {
     .top-navigtaion {
         display: none;
+    }
+}
+
+
+.mat-menu-content {
+    padding: 0 !important;
+}
+
+.mat-menu-panel {
+    max-width: 100% !important;
+    min-width: 100% !important;
+}
+
+.notification-main {
+    width: 350px !important;
+
+    .noti-head {
+        border-bottom : 1px solid #0c1527;
+        background    : #0f192f;
+        padding-top   : 18px;
+        padding-left  : 20px;
+        padding-right : 20px;
+        padding-bottom: 35px;
+        ;
+
+        h6 {
+            color      : #ffffff;
+            font-weight: 600;
+            font-family: "Open Sans", "sans-serif";
+            font-size  : 14px;
+            float      : left;
+        }
+
+        .float-right {
+            float: right;
+
+            a {
+                color: #ffffff;
+            }
+        }
+    }
+
+    .noti-content {
+        min-height: 150px;
+        max-height: 250px;
+        overflow-y: visible;
+        overflow-x: hidden;
+        box-sizing: content-box;
+    }
+
+    .noti-content::-webkit-scrollbar {
+        width: 7px;
+    }
+
+    .noti-content::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 0px #ffffff;
+        border-radius     : 2px;
+    }
+
+    .noti-content::-webkit-scrollbar-thumb {
+        border-radius     : 2px;
+        -webkit-box-shadow: inset 0 0 6px gray;
+    }
+
+    .noti-footer {
+        border-top: 1px solid #f1f1f1;
+        padding   : 15px 20px;
+        text-align: center;
+        background: #ecf0f5;
     }
 }
