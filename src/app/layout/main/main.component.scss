@@ -10,14 +10,14 @@
 
 .main-sidenav-container {
     /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
-       causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+       causes `<mat-sidenav-content>` to act as our scrolling element for desktop layout. */
     flex: 1;
     background: #3f51b5;
 }
 
 .main-is-mobile .main-sidenav-container {
     /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
-       `<body>` to be our scrolling element for mobile layouts. */
+       `<body>` to be our scrolling element for mobile layout. */
     flex: 1 0 auto;
     background: #3f51b5;
 }
