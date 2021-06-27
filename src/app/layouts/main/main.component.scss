@@ -12,10 +12,61 @@
     /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
        causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
     flex: 1;
+    background: #3f51b5;
 }
 
 .main-is-mobile .main-sidenav-container {
     /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
        `<body>` to be our scrolling element for mobile layouts. */
     flex: 1 0 auto;
+    background: #3f51b5;
 }
+
+.main-sidenav-content {
+    background: #ecf0f5;
+    margin-top: 140px;
+}
+
+.main-sidenav {
+    border-radius: 0px 20px 0px 0px !important;
+    width: 250px;
+    background: #ffffff !important;
+}
+
+.pcoded-content {
+    position: relative;
+    display: block;
+    padding: 25px;
+    z-index: 5;
+}
+
+
+    // .toolbar {
+    //   display: flex;
+    // }
+    // .top-navigtaion {
+    //   margin-left: auto;
+    // }
+  
+    // .sidenav-container {
+    //   background: #ffffff;
+    //   color: inherit;
+    //   height: calc(100vh - 64px);
+    //   .mat-sidenav-content {
+    //     overflow: hidden;
+    //   }
+    // }
+  
+    // @media screen and (max-width: 600px) {
+    //   .sidenav-container {
+    //     height: calc(100vh - 56px);
+    //   }
+    // }
+  
+    // @media screen and (max-width: 860px) {
+    //   .top-navigtaion {
+    //     display: none;
+    //   }
+    // }
+
+  
