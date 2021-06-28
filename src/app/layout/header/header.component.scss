@@ -77,13 +77,13 @@ h1.main-app-name {
     }
 
     .noti-content::-webkit-scrollbar-track {
-        -webkit-box-shadow: inset 0 0 0px #ffffff;
+        box-shadow: inset 0 0 0px #ffffff;
         border-radius     : 2px;
     }
 
     .noti-content::-webkit-scrollbar-thumb {
         border-radius     : 2px;
-        -webkit-box-shadow: inset 0 0 6px gray;
+        box-shadow: inset 0 0 6px gray;
     }
 
     .noti-footer {
