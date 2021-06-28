@@ -6,20 +6,20 @@
     <nav class="top-navigtaion">
         <!-- <a mat-button routerLink="/" routerLinkActive="active">Home</a>
         <a mat-button routerLink="/" routerLinkActive="active">Page</a> -->
-        <button mat-flat-button color="primary" [matMenuTriggerFor]="notificationMenu">
+        <button id="btnNotification" mat-flat-button color="primary" [matMenuTriggerFor]="notificationMenu">
             <mat-icon matBadge="15" matBadgeColor="warn" matBadgeSize="medium" matBadgePosition="above after"
                 [matBadgeHidden]="false">
                 notifications
             </mat-icon>
         </button>
         &nbsp;&nbsp;
-        <button mat-flat-button color="primary" [matMenuTriggerFor]="profileMenu">
+        <button id="btnProfile" mat-flat-button color="primary" [matMenuTriggerFor]="profileMenu">
             <mat-icon>
                 person
             </mat-icon>
         </button>
         &nbsp;&nbsp;
-        <button mat-flat-button color="primary">
+        <button id="btnLogout" mat-flat-button color="primary">
             <mat-icon>
                 logout
             </mat-icon>
