@@ -1,0 +1,5 @@
+<div [class.main-is-mobile]="mobileQuery.matches">
+    <app-layout-header (sideNavToggle)="main.snav.toggle()"></app-layout-header>
+    <app-layout-main #main></app-layout-main>
+    <app-layout-footer></app-layout-footer>
+</div>

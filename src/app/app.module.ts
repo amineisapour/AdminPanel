@@ -7,6 +7,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { MainComponent } from './layout/main/main.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { LayoutComponent } from './layout/layout.component';
+import { NavBarComponent } from './layout/main/nav-bar/nav-bar.component';
 
 //? material
 import { MatIconModule } from '@angular/material/icon';
@@ -19,7 +22,7 @@ import { MatBadgeModule } from '@angular/material/badge';
 
 //? Perfect Scrollbar
 import { PERFECT_SCROLLBAR_CONFIG, PerfectScrollbarConfigInterface, PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
-import { FooterComponent } from './layout/footer/footer.component';
+
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true
 };
@@ -30,7 +33,9 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     DashboardComponent,
     HeaderComponent,
     MainComponent,
-    FooterComponent
+    FooterComponent,
+    LayoutComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
