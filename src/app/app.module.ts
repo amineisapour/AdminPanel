@@ -19,6 +19,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { MatBadgeModule } from '@angular/material/badge';
+import { MatTreeModule } from '@angular/material/tree';
 
 //? Perfect Scrollbar
 import { PERFECT_SCROLLBAR_CONFIG, PerfectScrollbarConfigInterface, PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
@@ -50,7 +51,8 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     MatListModule,
     MatMenuModule,
     MatButtonModule,
-    MatBadgeModule
+    MatBadgeModule,
+    MatTreeModule
   ],
   providers: [
     //? Perfect Scrollbar

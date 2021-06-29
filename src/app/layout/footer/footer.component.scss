@@ -1,4 +1,10 @@
 .ifotter {
+
+    position: fixed;
+    bottom  : 0;
+    left    : 0;
+    right   : 0;
+
     &-main {
         background: #3f51b5;
         color     : #fff;

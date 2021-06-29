@@ -1,1 +1,11 @@
-<a mat-list-item routerLink="." *ngFor="let nav of fillerNav">{{nav}}</a>
+<!-- <a mat-list-item routerLink="." *ngFor="let nav of fillerNav">{{nav}}</a> -->
+<ul>
+    <li *ngFor="let item of menuItems; trackBy: getTrackById">
+        <a routerLink="{{ item.path }}" routerLinkActive="active-item">{{ item.title }}</a>
+        <ul *ngIf="item.children">
+            <li *ngFor="let subItem of item.children; trackBy: getTrackById">
+                <a routerLink="{{ subItem.path }}" routerLinkActive="active-item">{{ subItem.title }}</a>
+            </li>
+        </ul>
+    </li>
+</ul>
