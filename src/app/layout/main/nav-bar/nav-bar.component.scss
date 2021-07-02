@@ -1,6 +1,34 @@
+.tree-nav__active-item {
+    background  : #3f51b5;
+    color       : #fff !important;
+    margin-right: 7px;
 
-.active-item {
-    color: blue;
+    box-shadow        : 0 5px 10px -1px rgb(69 90 100 / 30%) !important;
+    -moz-box-shadow   : 0 5px 10px -1px rgb(69 90 100 / 30%) !important;
+    -webkit-box-shadow: 0 5px 10px -1px rgb(69 90 100 / 30%) !important;
+
+    border-radius        : 0 10px 10px 0 !important;
+    -webkit-border-radius: 0 10px 10px 0 !important;
+    -moz-border-radius   : 0 10px 10px 0 !important;
+}
+
+a:hover {
+    background  : #3f51b5;
+    color       : #fff !important;
+    margin-right: 7px;
+
+    box-shadow        : 0 5px 10px -1px rgb(69 90 100 / 30%) !important;
+    -moz-box-shadow   : 0 5px 10px -1px rgb(69 90 100 / 30%) !important;
+    -webkit-box-shadow: 0 5px 10px -1px rgb(69 90 100 / 30%) !important;
+
+    border-radius        : 0 10px 10px 0 !important;
+    -webkit-border-radius: 0 10px 10px 0 !important;
+    -moz-border-radius   : 0 10px 10px 0 !important;
+}
+
+.tree-hr {
+    margin: 7px 5px !important;
+    border-top: 1px solid #e2e5e8;
 }
 
 /*
@@ -63,12 +91,12 @@ summary::-webkit-details-marker {
 }
 
 .tree-nav__item-title {
-    cursor     : pointer;
-    display    : block;
-    outline    : 0;
-    color      : #000;
-    font-size  : 14px;
-    line-height: 2rem;
+    cursor      : pointer;
+    display     : block;
+    outline     : 0;
+    color       : #000;
+    font-size   : 14px;
+    line-height : 2rem;
     padding-left: 7px;
 }
 
