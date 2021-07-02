@@ -17,10 +17,16 @@ export class NavBarComponent implements OnInit {
   public constructor() {
     this.menuItems = [
       new Models.MenuItem(1, 'Dashboard', '', '/', []),
-      new Models.MenuItem(2, 'Tasks', '', '/tasks', [
-        new Models.MenuItem(3, 'Tasks 1', '', '/tasks/1', []),
-        new Models.MenuItem(2, 'Tasks 2', '', '/tasks/2', [])
-      ])
+      new Models.MenuItem(2, 'Tasks 1', '', '/tasks', [
+        new Models.MenuItem(3, 'Tasks 1 - 1', '', '/tasks/1', []),
+        new Models.MenuItem(4, 'Tasks 1 - 2', '', '/tasks/2', [
+          new Models.MenuItem(5, 'Tasks 1 - 2 - 1', '', '/tasks/2/1', [
+            new Models.MenuItem(6, 'Tasks 1 - 2 - 1 - 1', '', '/tasks/2/1/1', []),
+          ])
+        ]),
+        new Models.MenuItem(7, 'Tasks 1 - 3', '', '/tasks/3', [])
+      ]),
+      new Models.MenuItem(8, 'Profile', '', '/profile', []),
     ]
   }
 

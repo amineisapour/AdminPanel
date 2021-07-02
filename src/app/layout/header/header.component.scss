@@ -111,7 +111,9 @@ h1.main-app-name {
     }
 
     .noti-content::-webkit-scrollbar {
-        width: 7px;
+        position          : absolute;
+        -webkit-appearance: none;
+        width             : 7px;
     }
 
     .noti-content::-webkit-scrollbar-track {
