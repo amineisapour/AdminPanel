@@ -16,18 +16,26 @@ export class NavBarComponent implements OnInit {
 
   public constructor() {
     this.menuItems = [
-      new Models.MenuItem(1, 'Dashboard', '', '/', []),
-      new Models.MenuItem(2, 'Tasks 1', '', '/tasks', [
-        new Models.MenuItem(3, 'Tasks 1 - 1', '', '/tasks/1', []),
-        new Models.MenuItem(4, 'Tasks 1 - 2', '', '/tasks/2', [
-          new Models.MenuItem(5, 'Tasks 1 - 2 - 1', '', '/tasks/2/1', [
-            new Models.MenuItem(6, 'Tasks 1 - 2 - 1 - 1', '', '/tasks/2/1/1', []),
-          ])
+      new Models.MenuItem(1, 'Dashboard', '', '/dashboard', null),
+      new Models.MenuItem(2, 'Tasks', '', '', [
+        new Models.MenuItem(3, 'Tasks Board', '', '/tasks/board', null),
+        new Models.MenuItem(4, 'Tasks Departments', '', '', [
+          new Models.MenuItem(5, 'Tasks DV', '', '/tasks/departments/dv', null),
+          new Models.MenuItem(6, 'Tasks Admin', '', '/tasks/departments/admin', null),
+          new Models.MenuItem(7, 'Tasks FC', '', '/tasks/departments/fc', null),
         ]),
-        new Models.MenuItem(7, 'Tasks 1 - 3', '', '/tasks/3', [])
+        new Models.MenuItem(8, 'Tasks Report', '', '', [
+          new Models.MenuItem(9, 'Report 1', '', '/tasks/report/1', null),
+          new Models.MenuItem(10, 'Report 2', '', '/tasks/report/2', null),
+          new Models.MenuItem(11, 'Report 3', '', '/tasks/report/3', null),
+        ]),
       ]),
-      new Models.MenuItem(8, 'Profile', '', '/profile', []),
-    ]
+      new Models.MenuItem(12, 'User', '', '', [
+        new Models.MenuItem(13, 'Profile', '', '/user/Profile', null),
+        new Models.MenuItem(14, 'User List', '', '/user/list', null),
+        new Models.MenuItem(15, 'User Access', '', '/user/access', null),
+      ]),
+    ];
   }
 
   ngOnInit(): void { }

@@ -1,4 +1,5 @@
 import * as Interfaces from "../interfaces/menu-item.interface";
+import { Nullable } from "./base.model";
 
 export class MenuItem implements Interfaces.MenuItem {
 
@@ -7,6 +8,6 @@ export class MenuItem implements Interfaces.MenuItem {
         public title: string,
         public icon: string,
         public path: string,
-        public children: MenuItem[]
+        public children?: Nullable<MenuItem[]>
     ) { }
 }
