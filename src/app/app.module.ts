@@ -12,14 +12,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { NavBarComponent } from './layout/main/nav-bar/nav-bar.component';
 
 //? material
-import { MatIconModule } from '@angular/material/icon';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatListModule } from '@angular/material/list';
-import { MatMenuModule } from '@angular/material/menu';
-import { MatButtonModule } from '@angular/material/button';
-import { MatBadgeModule } from '@angular/material/badge';
-import { MatTreeModule } from '@angular/material/tree';
+import { MaterialModule } from './modules/material.module';
 
 //? Perfect Scrollbar
 import { PERFECT_SCROLLBAR_CONFIG, PerfectScrollbarConfigInterface, PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
@@ -45,14 +38,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     //? Perfect Scrollbar
     PerfectScrollbarModule,
     //? material
-    MatIconModule,
-    MatSidenavModule,
-    MatToolbarModule,
-    MatListModule,
-    MatMenuModule,
-    MatButtonModule,
-    MatBadgeModule,
-    MatTreeModule
+    MaterialModule
   ],
   providers: [
     //? Perfect Scrollbar
