@@ -8,6 +8,7 @@ export class MenuItem implements Interfaces.MenuItem {
         public title: string,
         public icon: string,
         public path: string,
+        public lineNeed: boolean,
         public children?: Nullable<MenuItem[]>
     ) { }
 }
