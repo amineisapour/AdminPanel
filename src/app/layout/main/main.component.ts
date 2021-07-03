@@ -14,14 +14,10 @@ export class MainComponent implements OnDestroy {
 
   private _mobileQueryListener: () => void;
 
-  public comment: string;
-
   constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
     this.mobileQuery = media.matchMedia('(max-width: 600px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);
-
-    this.comment = '1234567890';
   }
 
   ngOnDestroy(): void {

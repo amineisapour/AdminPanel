@@ -31,7 +31,7 @@ export class NavBarComponent implements OnInit {
         ]),
       ]),
       new Models.MenuItem(12, 'User', '', '', false, [
-        new Models.MenuItem(13, 'Profile', '', '/user/Profile', false),
+        new Models.MenuItem(13, 'Profile', '', '/user/profile', false),
         new Models.MenuItem(14, 'User List', '', '/user/list', false),
         new Models.MenuItem(15, 'User Access', '', '/user/access', false),
       ]),

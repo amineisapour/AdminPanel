@@ -10,18 +10,10 @@
           </p>
         </div>
         <div class="layout-content-value">
-          <h1>Content...</h1>
-          <p>Amin, Text,Text,Text...</p>
-          <p>Text, Text,Text,Text...</p>
-          <p>Text, Text,Text,Text...</p>
-          <p>Text, Text,Text,Text...</p>
-          <p>Text, Text,Text,Text...</p>
-          <p>Text, Text,Text,Text...</p>
-          <p>{{ comment | number }}: {{ comment | numberToWord }}</p>
+          <router-outlet></router-outlet>
         </div>
       </div>
     </div>
-    <!-- <router-outlet></router-outlet> -->
   </mat-sidenav-content>
 
   <mat-sidenav class="main-sidenav" #snav [opened]="mobileQuery.matches ? false : true"
