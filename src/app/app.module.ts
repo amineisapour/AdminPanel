@@ -16,7 +16,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { NavBarComponent } from './layout/main/nav-bar/nav-bar.component';
 
 //? Pipes
-import { PersianDatePipe } from './pipes/persian-date.pipe';
+import { NumberToWordPipe } from './pipes/number-to-word.pipe';
 
 @NgModule({
   declarations: [
@@ -27,7 +27,7 @@ import { PersianDatePipe } from './pipes/persian-date.pipe';
     FooterComponent,
     LayoutComponent,
     NavBarComponent,
-    PersianDatePipe
+    NumberToWordPipe
   ],
   imports: [
     BrowserModule,
