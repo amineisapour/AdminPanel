@@ -2,6 +2,7 @@
 
 files
 .vscode
+ssl
 
 # compiled output
 /dist
