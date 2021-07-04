@@ -1,14 +1,12 @@
 import { MediaMatcher } from '@angular/cdk/layout';
-import { ChangeDetectorRef, Component, OnDestroy, ViewChild } from '@angular/core';
+import { ChangeDetectorRef, Component, OnDestroy } from '@angular/core';
 
 @Component({
-  selector: 'app-layout-main',
-  templateUrl: './main.component.html',
-  styleUrls: ['./main.component.scss']
+  selector: 'app-admin',
+  templateUrl: './admin.component.html',
+  styleUrls: ['./admin.component.scss']
 })
-export class MainComponent implements OnDestroy {
-
-  @ViewChild('snav') snav: any;
+export class AdminComponent implements OnDestroy {
 
   mobileQuery: MediaQueryList;
 

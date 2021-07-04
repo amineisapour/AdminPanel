@@ -4,7 +4,6 @@ import { UserListComponent } from './user-list/user-list.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 
 const routes: Routes = [
-  { path: '', component: UserProfileComponent },
   { path: 'profile', component: UserProfileComponent },
   { path: 'list', component: UserListComponent },
 ];

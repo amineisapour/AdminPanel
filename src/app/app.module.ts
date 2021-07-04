@@ -7,16 +7,19 @@ import { SharedModule } from './modules/shared.module';
 
 //? Components
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { HeaderComponent } from './layout/header/header.component';
-import { MainComponent } from './layout/main/main.component';
-import { FooterComponent } from './layout/footer/footer.component';
 import { LayoutComponent } from './layout/layout.component';
-import { NavBarComponent } from './layout/main/nav-bar/nav-bar.component';
+import { AdminComponent } from './layout/admin/admin.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { HeaderComponent } from './layout/admin/header/header.component';
+import { FooterComponent } from './layout/admin/footer/footer.component';
+import { MainComponent } from './layout/admin/main/main.component';
+import { NavBarComponent } from './layout/admin/main/nav-bar/nav-bar.component';
+import { LoginComponent } from './layout/auth/login/login.component';
+import { RegisterComponent } from './layout/auth/register/register.component';
+
 
 //? Services and Providers
 import { ErrorService } from './services/common/error.service';
-
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { ErrorService } from './services/common/error.service';
     MainComponent,
     FooterComponent,
     LayoutComponent,
-    NavBarComponent
+    NavBarComponent,
+    AdminComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

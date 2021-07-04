@@ -1,5 +1,5 @@
-<div [class.main-is-mobile]="mobileQuery.matches">
-    <app-layout-header (sideNavToggle)="main.snav.toggle()"></app-layout-header>
-    <app-layout-main #main></app-layout-main>
-    <app-layout-footer></app-layout-footer>
-</div>
+<app-admin  *ngIf="isLogin; else other_content"></app-admin>
+<ng-template #other_content>
+    <!-- <app-auth></app-auth> -->
+    <router-outlet></router-outlet>
+</ng-template>

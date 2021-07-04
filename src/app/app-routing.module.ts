@@ -1,30 +1,59 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { LoginComponent } from './layout/auth/login/login.component';
+import { RegisterComponent } from './layout/auth/register/register.component';
+import { NotFoundComponent } from './layout/maintenance/not-found/not-found.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'dashboard',
+    redirectTo: 'admin/dashboard',
     pathMatch: 'full'
   },
   {
-    path: 'dashboard',
-    //canActivate: [AuthGuard],
-    component: DashboardComponent,
-    pathMatch: 'full'
+    path: 'admin',
+    children: [
+      {
+        path: 'dashboard',
+        //canActivate: [AuthGuard],
+        component: DashboardComponent,
+        pathMatch: 'full'
+      },
+      {
+        path: 'user',
+        loadChildren: () => import('./components/user/user.module').then(module => module.UserModule)
+      },
+    ]
   },
-  //? add lazy modules to routing
   {
-    path: 'user',
-    loadChildren: () => import('./components/user/user.module').then(module => module.UserModule)
+    path: 'auth',
+    children: [
+      {
+        path: 'login',
+        component: LoginComponent,
+        pathMatch: 'full'
+      },
+      {
+        path: 'register',
+        component: RegisterComponent,
+        pathMatch: 'full'
+      },
+    ]
   },
-  //? Not Found page
-  // {
-  //   path: '**',
-  //   component: MaintenErrorComponent,
-  //   children: []
-  // },
+  {
+    path: '',
+    children: [
+      {
+        path: 'maintenance',
+        loadChildren: () => import('./layout/maintenance/maintenance.module').then(module => module.MaintenanceModule)
+      },
+    ]
+  },
+  {
+    path: '**',
+    component: NotFoundComponent,
+  }
 ];
 
 @NgModule({
