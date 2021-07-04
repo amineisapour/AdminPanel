@@ -21,28 +21,27 @@
                 </mat-icon>
             </button>
             &nbsp;&nbsp;
-            <button id="btnLogout" mat-flat-button color="primary">
-                <mat-icon>
-                    logout
-                </mat-icon>
-            </button>
         </nav>
     </mat-toolbar-row>
 </mat-toolbar>
 
 <mat-menu #profileMenu="matMenu" yPosition="below" xPosition="before">
-    <button mat-menu-item>
-        <mat-icon>dialpad</mat-icon>
-        <span>Redial</span>
-    </button>
-    <button mat-menu-item disabled>
-        <mat-icon>voicemail</mat-icon>
-        <span>Check voice mail</span>
-    </button>
-    <button mat-menu-item>
-        <mat-icon>notifications_off</mat-icon>
-        <span>Disable alerts</span>
-    </button>
+    <div class="profile-main">
+        <a routerLink="/user/profile">
+            <button mat-menu-item>
+                <mat-icon>person</mat-icon>
+                <span>Profile</span>
+            </button>
+        </a>
+        <button mat-menu-item>
+            <mat-icon>message</mat-icon>
+            <span>Message</span>
+        </button>
+        <button mat-menu-item>
+            <mat-icon>logout</mat-icon>
+            <span>Logout</span>
+        </button>
+    </div>
 </mat-menu>
 
 <mat-menu #notificationMenu="matMenu" yPosition="below" xPosition="before">

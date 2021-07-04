@@ -3,13 +3,28 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 const routes: Routes = [
-  { path: '', component: DashboardComponent },
+  {
+    path: '',
+    redirectTo: 'dashboard',
+    pathMatch: 'full'
+  },
+  {
+    path: 'dashboard',
+    //canActivate: [AuthGuard],
+    component: DashboardComponent,
+    pathMatch: 'full'
+  },
   //? add lazy modules to routing
   {
     path: 'user',
-    loadChildren: () => import('./components/user/user.module').then(q => q.UserModule)
-  }
-
+    loadChildren: () => import('./components/user/user.module').then(module => module.UserModule)
+  },
+  //? Not Found page
+  // {
+  //   path: '**',
+  //   component: MaintenErrorComponent,
+  //   children: []
+  // },
 ];
 
 @NgModule({

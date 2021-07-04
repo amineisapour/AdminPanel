@@ -56,10 +56,6 @@ h1.main-app-name {
         #btnProfile {
             display: none;
         }
-
-        #btnLogout {
-            display: none;
-        }
     }
 }
 
@@ -141,5 +137,13 @@ h1.main-app-name {
         padding   : 15px 20px;
         text-align: center;
         background: #ecf0f5;
+    }
+}
+
+.profile-main {
+    min-width: 180px !important;
+
+    a {
+        text-decoration: none;
     }
 }
