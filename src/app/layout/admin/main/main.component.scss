@@ -12,11 +12,6 @@
     background: #3f51b5;
 }
 
-.main-sidenav-content {
-    background: #ecf0f5;
-    margin-top: 140px;
-}
-
 .main-sidenav {
     width     : 230px;
     background: #fff !important;
@@ -28,6 +23,12 @@
     border-radius        : 0 10px 0 0 !important;
     -webkit-border-radius: 0 10px 0 0 !important;
     -moz-border-radius   : 0 10px 0 0 !important;
+
+    &-content {
+        background: #ecf0f5;
+        position  : relative;
+        min-height: 74vh;
+    }
 }
 
 .mat-sidenav-content {
@@ -36,19 +37,24 @@
 
 .layout-main-container {
     position  : relative;
-    z-index   : 10;
-    max-height: 90vh;
-    min-height: 74vh;
-    background: #ecf0f5;
+    display   : block;
+    padding   : 25px;
+    margin-top: 140px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .layout-main-container {
+        margin-top: 200px !important;
+    }
+
 }
 
 .layout-content {
-    width     : 100%;
-    position  : absolute;
     display   : block;
     margin-top: -150px;
-    padding   : 25px;
     box-sizing: border-box;
+    width     : 100%;
 
     &-value {
         background-color: #fff;
@@ -63,14 +69,6 @@
         -moz-border-radius   : 10px !important;
     }
 }
-
-// .layout-content-value {
-//     background-color: #ffffff;
-//     box-shadow      : 0 2px 10px -1px rgb(69 90 100 / 30%);
-//     border-radius   : 10px !important;
-//     padding         : 20px;
-// }
-
 
 
 /*
